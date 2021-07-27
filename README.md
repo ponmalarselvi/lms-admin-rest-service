@@ -57,7 +57,8 @@ You need to configure your own username and password in application.properties
   
   Actuator brings production-ready features to our application. Monitoring our app, gathering metrics, understanding traffic, or the state of our database become trivial with this dependency.
   The main benefit of this library is that we can get production-grade tools without having to actually implement these features ourselves.
-    **<ins>Enabling Endpoints</ins>**
+    
+  **<ins>Enabling Endpoints</ins>**
   
     management.health.diskspace.enabled=true
     management.health.db.enabled=true

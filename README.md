@@ -45,7 +45,7 @@ You need to configure your own username and password in application.properties
 
   spring.security.user.password=password
   
-  Thanks for visiting. Enjoy Coding...
+  **Thanks for visiting. Enjoy Coding...**
   
  
   

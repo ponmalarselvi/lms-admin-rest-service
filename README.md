@@ -65,17 +65,11 @@ You need to configure your own username and password in application.properties
     **<ins>Enabling Endpoints</ins>**
   
     management.health.diskspace.enabled=true
-
     management.health.db.enabled=true
-
     management.endpoint.health.show-details=always
-
     management.endpoints.web.base-path=/
-
     management.endpoints.web.exposure.include=*
-
     management.metrics.export.datadog.enabled=true
-
     management.trace.http.enabled=true
   
   - /auditevents lists security audit-related events such as user login/logout. Also, we can filter by principal or type among other fields.

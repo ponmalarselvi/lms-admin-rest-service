@@ -13,6 +13,7 @@ Spring Boot helps you to create Spring-powered, production-grade applications an
 The [reference documentation](https://docs.spring.io/spring-boot/docs/current-SNAPSHOT/reference/html/) includes detailed [installation instructions](https://docs.spring.io/spring-boot/docs/current-SNAPSHOT/reference/html/getting-started.html#getting-started.installing) as well as a comprehensive getting started [guide](https://docs.spring.io/spring-boot/docs/current-SNAPSHOT/reference/html/getting-started.html#getting-started.first-application).
 
 **<ins>Database:</ins>**
+
   Syntax
     The basic syntax of CREATE DATABASE statement is as follows −
 
@@ -30,6 +31,7 @@ The [reference documentation](https://docs.spring.io/spring-boot/docs/current-SN
       spring.datasource.password=postgres
 
 **<ins>Running the Application</ins>**
+  
 Now, we can run our example war with two simple commands:
 
 * $ mvn clean package spring-boot:repackage
@@ -46,6 +48,7 @@ You need to configure your own username and password in application.properties
   spring.security.user.password=password
  
   **<ins>Swagger UI</ins>**
+  
   Swagger UI is a built-in solution that makes user interaction with the Swagger-generated API documentation much easier.
   
   Now we can test it in our browser by visiting:
@@ -53,6 +56,7 @@ You need to configure your own username and password in application.properties
   http://localhost:8080/swagger-ui/
   
   **<ins>Actuator</ins>**
+  
   Actuator brings production-ready features to our application.
 
   Monitoring our app, gathering metrics, understanding traffic, or the state of our database become trivial with this dependency.
@@ -69,24 +73,24 @@ You need to configure your own username and password in application.properties
   management.metrics.export.datadog.enabled=true
   management.trace.http.enabled=true
   
-  /auditevents lists security audit-related events such as user login/logout. Also, we can filter by principal or type among other fields.
-  /beans returns all available beans in our BeanFactory. Unlike /auditevents, it doesn't support filtering.
-  /conditions, formerly known as /autoconfig, builds a report of conditions around autoconfiguration.
-  /configprops allows us to fetch all @ConfigurationProperties beans.
-  /env returns the current environment properties. Additionally, we can retrieve single properties.
-  /flyway provides details about our Flyway database migrations.
-  /health summarizes the health status of our application.
-  /heapdump builds and returns a heap dump from the JVM used by our application.
-  /info returns general information. It might be custom data, build information or details about the latest commit.
-  /liquibase behaves like /flyway but for Liquibase.
-  /logfile returns ordinary application logs.
-  /loggers enables us to query and modify the logging level of our application.
-  /metrics details metrics of our application. This might include generic metrics as well as custom ones.
-  /prometheus returns metrics like the previous one, but formatted to work with a Prometheus server.
-  /scheduledtasks provides details about every scheduled task within our application.
-  /sessions lists HTTP sessions given we are using Spring Session.
-  /shutdown performs a graceful shutdown of the application.
-  /threaddump dumps the thread information of the underlying JVM.
+  - /auditevents lists security audit-related events such as user login/logout. Also, we can filter by principal or type among other fields.
+  - /beans returns all available beans in our BeanFactory. Unlike /auditevents, it doesn't support filtering.
+  - /conditions, formerly known as /autoconfig, builds a report of conditions around autoconfiguration.
+  - /configprops allows us to fetch all @ConfigurationProperties beans.
+  - /env returns the current environment properties. Additionally, we can retrieve single properties.
+  - /flyway provides details about our Flyway database migrations.
+  - /health summarizes the health status of our application.
+  - /heapdump builds and returns a heap dump from the JVM used by our application.
+  - /info returns general information. It might be custom data, build information or details about the latest commit.
+  - /liquibase behaves like /flyway but for Liquibase.
+  - /logfile returns ordinary application logs.
+  - /loggers enables us to query and modify the logging level of our application.
+  - /metrics details metrics of our application. This might include generic metrics as well as custom ones.
+  - /prometheus returns metrics like the previous one, but formatted to work with a Prometheus server.
+  - /scheduledtasks provides details about every scheduled task within our application.
+  - /sessions lists HTTP sessions given we are using Spring Session.
+  - /shutdown performs a graceful shutdown of the application.
+  - /threaddump dumps the thread information of the underlying JVM.
   
   **Thanks for visiting. Enjoy Coding...**
   

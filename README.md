@@ -44,6 +44,49 @@ You need to configure your own username and password in application.properties
   spring.security.user.name=admin
 
   spring.security.user.password=password
+ 
+  **<ins>Swagger UI</ins>**
+  Swagger UI is a built-in solution that makes user interaction with the Swagger-generated API documentation much easier.
+  
+  Now we can test it in our browser by visiting:
+
+  http://localhost:8080/swagger-ui/
+  
+  **<ins>Actuator</ins>**
+  Actuator brings production-ready features to our application.
+
+  Monitoring our app, gathering metrics, understanding traffic, or the state of our database become trivial with this dependency.
+
+  The main benefit of this library is that we can get production-grade tools without having to actually implement these features ourselves.
+  
+  **<ins>Enabling Endpoints</ins>**
+  
+  management.health.diskspace.enabled=true
+  management.health.db.enabled=true
+  management.endpoint.health.show-details=always
+  management.endpoints.web.base-path=/
+  management.endpoints.web.exposure.include=*
+  management.metrics.export.datadog.enabled=true
+  management.trace.http.enabled=true
+  
+  /auditevents lists security audit-related events such as user login/logout. Also, we can filter by principal or type among other fields.
+  /beans returns all available beans in our BeanFactory. Unlike /auditevents, it doesn't support filtering.
+  /conditions, formerly known as /autoconfig, builds a report of conditions around autoconfiguration.
+  /configprops allows us to fetch all @ConfigurationProperties beans.
+  /env returns the current environment properties. Additionally, we can retrieve single properties.
+  /flyway provides details about our Flyway database migrations.
+  /health summarizes the health status of our application.
+  /heapdump builds and returns a heap dump from the JVM used by our application.
+  /info returns general information. It might be custom data, build information or details about the latest commit.
+  /liquibase behaves like /flyway but for Liquibase.
+  /logfile returns ordinary application logs.
+  /loggers enables us to query and modify the logging level of our application.
+  /metrics details metrics of our application. This might include generic metrics as well as custom ones.
+  /prometheus returns metrics like the previous one, but formatted to work with a Prometheus server.
+  /scheduledtasks provides details about every scheduled task within our application.
+  /sessions lists HTTP sessions given we are using Spring Session.
+  /shutdown performs a graceful shutdown of the application.
+  /threaddump dumps the thread information of the underlying JVM.
   
   **Thanks for visiting. Enjoy Coding...**
   

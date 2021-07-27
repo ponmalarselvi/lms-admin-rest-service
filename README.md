@@ -43,24 +43,19 @@ https://localhost:8080
 
 You need to configure your own username and password in application.properties
   
-  spring.security.user.name=admin
-
-  spring.security.user.password=password
+    spring.security.user.name=admin
+    spring.security.user.password=password
  
   **<ins>Swagger UI</ins>**
   
   Swagger UI is a built-in solution that makes user interaction with the Swagger-generated API documentation much easier.
-  
   Now we can test it in our browser by visiting:
 
   http://localhost:8080/swagger-ui/
   
   **<ins>Actuator</ins>**
   
-  Actuator brings production-ready features to our application.
-
-  Monitoring our app, gathering metrics, understanding traffic, or the state of our database become trivial with this dependency.
-
+  Actuator brings production-ready features to our application. Monitoring our app, gathering metrics, understanding traffic, or the state of our database become trivial with this dependency.
   The main benefit of this library is that we can get production-grade tools without having to actually implement these features ourselves.
     **<ins>Enabling Endpoints</ins>**
   

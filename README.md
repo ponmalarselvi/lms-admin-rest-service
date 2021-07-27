@@ -35,6 +35,15 @@ Now, we can run our example war with two simple commands:
 * $ mvn clean package spring-boot:repackage
 * $ java -jar target/spring-boot-ops.war
 <BR>More details regarding how to run a jar file can be found in our article Run [JAR Application With Command Line Arguments](https://www.baeldung.com/java-run-jar-with-arguments).
+Once deployed, you can access the app at:
 
+https://localhost:8080
+
+You need to configure your own username and password in application.properties
+  
+spring.security.user.name=admin
+spring.security.user.password=password
+  
+ 
   
 

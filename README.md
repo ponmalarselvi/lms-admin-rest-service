@@ -41,8 +41,11 @@ https://localhost:8080
 
 You need to configure your own username and password in application.properties
   
-spring.security.user.name=admin
-spring.security.user.password=password
+  spring.security.user.name=admin
+
+  spring.security.user.password=password
+  
+  Thanks for visiting. Enjoy Coding...
   
  
   

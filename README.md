@@ -72,6 +72,7 @@ You need to configure your own username and password in application.properties
     management.metrics.export.datadog.enabled=true
     management.trace.http.enabled=true
   
+  Let's have a look at some available endpoints, most of which were available in 1.x already.Also, some endpoints have been added, some removed and some have been restructured:
   - /auditevents lists security audit-related events such as user login/logout. Also, we can filter by principal or type among other fields.
   - /beans returns all available beans in our BeanFactory. Unlike /auditevents, it doesn't support filtering.
   - /conditions, formerly known as /autoconfig, builds a report of conditions around autoconfiguration.

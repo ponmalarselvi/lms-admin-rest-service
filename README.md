@@ -30,7 +30,7 @@ The [reference documentation](https://docs.spring.io/spring-boot/docs/current-SN
       spring.datasource.username=postgres
       spring.datasource.password=postgres
 
-**<ins>Running the Application</ins>**
+**<ins>Running the Application in local environment</ins>**
   
 Now, we can run our example war with two simple commands:
 
@@ -52,6 +52,9 @@ You need to configure your own username and password in application.properties
   Now we can test it in our browser by visiting:
 
   http://localhost:8080/swagger-ui/
+  
+  **<ins>Running the Application in Heroku Cloud environment</ins>**
+  Please refer this [article](https://www.callicoder.com/deploy-host-spring-boot-apps-on-heroku/) 
   
   **<ins>Actuator</ins>**
   

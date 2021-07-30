@@ -54,6 +54,7 @@ You need to configure your own username and password in application.properties
   http://localhost:8080/swagger-ui/
   
   **<ins>Running the Application in Heroku Cloud environment</ins>**
+  
   Please refer this [article](https://www.callicoder.com/deploy-host-spring-boot-apps-on-heroku/) 
   
   **<ins>Actuator</ins>**

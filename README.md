@@ -1,4 +1,6 @@
 # lms-admin-rest-service
+Don't forget to give this project a ⭐
+
 Learn how to create RESTful web services using Spring Boot.
 
 Spring Boot helps you to create Spring-powered, production-grade applications and services with absolute minimum fuss. It takes an opinionated view of the Spring platform so that new and existing users can quickly get to the bits they need.
